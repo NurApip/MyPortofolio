@@ -41,3 +41,41 @@ body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #f
 .social-links a { color: #007bff; text-decoration: none; font-weight: 500; }
 
 footer { background: #007bff; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .btn-download {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 180px;
+    margin-top: 20px;
+  }
+
+  .skill-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .skill-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
